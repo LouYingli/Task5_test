@@ -3,7 +3,7 @@ Version,
   8.7;                                    !- Version Identifier
 
 LifeCycleCost:Parameters,
-  {600c6e81-c757-42b4-81be-9d3c77a8ab8e}, !- Name
+  {9d1bda72-9790-426a-84d6-82c1d827a35e}, !- Name
   EndOfYear,                              !- Discounting Convention
   ConstantDollar,                         !- Inflation Approach
   0.03,                                   !- Real Discount Rate
@@ -325,11 +325,11 @@ InternalMass,
   1967.07314364;                          !- Surface Area {m2}
 
 ElectricEquipment,
-  2 Elevator Lift Motors -104.162344 percent reduction, !- Name
+  2 Elevator Lift Motors -107.4118113 percent reduction, !- Name
   Core_bottom ZN,                         !- Zone or ZoneList Name
   Medium Office BLDG ELEVATORS,           !- Schedule Name
   EquipmentLevel,                         !- Design Level Calculation Method
-  59656.2369168,                          !- Design Level {W}
+  60605.73126186,                         !- Design Level {W}
   ,                                       !- Watts per Zone Floor Area {W/m2}
   ,                                       !- Watts per Person {W/person}
   ,                                       !- Fraction Latent
@@ -399,7 +399,7 @@ Schedule:Day:Interval,
   15.6;                                   !- Value Until Time 3
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {eeae4b3a-9cf2-400e-a60c-01cd431c022d}, !- Name
+  Schedule:Week:Daily {937b0f8f-7353-4c6b-a62b-9fac1b77c7c5}, !- Name
   Medium Office HtgSetp SmrDsn|Sun Day,   !- Sunday Schedule:Day Name
   Medium Office HtgSetp Default,          !- Monday Schedule:Day Name
   Medium Office HtgSetp Default,          !- Tuesday Schedule:Day Name
@@ -416,7 +416,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office HtgSetp,                  !- Name
   Temperature,                            !- Schedule Type Limits Name
-  Schedule:Week:Daily {eeae4b3a-9cf2-400e-a60c-01cd431c022d}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {937b0f8f-7353-4c6b-a62b-9fac1b77c7c5}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -466,7 +466,7 @@ Schedule:Day:Interval,
   26.7;                                   !- Value Until Time 3
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {2073e8eb-8458-47dc-b078-c466257855c6}, !- Name
+  Schedule:Week:Daily {f0358257-f4f2-4857-8811-7feb5a76541b}, !- Name
   Medium Office ClgSetp WntrDsn|Sun Day,  !- Sunday Schedule:Day Name
   Medium Office ClgSetp Default,          !- Monday Schedule:Day Name
   Medium Office ClgSetp Default,          !- Tuesday Schedule:Day Name
@@ -483,7 +483,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office ClgSetp,                  !- Name
   Temperature,                            !- Schedule Type Limits Name
-  Schedule:Week:Daily {2073e8eb-8458-47dc-b078-c466257855c6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {f0358257-f4f2-4857-8811-7feb5a76541b}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -542,7 +542,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -575,13 +575,13 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Core_bottom ZN,                         !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Core_bottom ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 DesignSpecification:OutdoorAir,
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Name
   Sum,                                    !- Outdoor Air Method
-  0.012265914048768,                      !- Outdoor Air Flow per Person {m3/s-person}
+  0.0122706335232,                        !- Outdoor Air Flow per Person {m3/s-person}
   0,                                      !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
   0,                                      !- Outdoor Air Flow per Zone {m3/s}
   0;                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
@@ -764,7 +764,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -792,7 +792,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Core_mid ZN,                            !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Core_mid ZN Design Spec Zone Air Dist;  !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -973,7 +973,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -1001,7 +1001,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Core_top ZN,                            !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Core_top ZN Design Spec Zone Air Dist;  !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -1580,7 +1580,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_bot_ZN_1_Wall_South_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_bot_ZN_1_Wall_South,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1588,10 +1588,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  -0.802172646425372, 0, 2.35032267724954, !- X,Y,Z Vertex 1 {m}
-  -0.802172646425372, 0, 1.00027732275046, !- X,Y,Z Vertex 2 {m}
-  50.7121726464254, 0, 1.00027732275046,  !- X,Y,Z Vertex 3 {m}
-  50.7121726464254, 0, 2.35032267724954;  !- X,Y,Z Vertex 4 {m}
+  -2.21680374033659, 0, 2.38739615893329, !- X,Y,Z Vertex 1 {m}
+  -2.21680374033659, 0, 0.963203841066715, !- X,Y,Z Vertex 2 {m}
+  52.1268037403366, 0, 0.963203841066715, !- X,Y,Z Vertex 3 {m}
+  52.1268037403366, 0, 2.38739615893329;  !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_bot_ZN_1_Wall_West,           !- Name
@@ -1608,16 +1608,6 @@ BuildingSurface:Detailed,
   4.5732, 4.5732, 0,                      !- X,Y,Z Vertex 2 {m}
   0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
   0, 0, 2.7432;                           !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_bot_ZN_1_Wall_South_Window - Overhang, !- Name
-  Perimeter_bot_ZN_1_Wall_South,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.91, 0, 2.3293,                       !- X,Y,Z Vertex 1 {m}
-  0, 0, 2.3293,                           !- X,Y,Z Vertex 2 {m}
-  0, -0.223959445944, 2.3293,             !- X,Y,Z Vertex 3 {m}
-  49.91, -0.223959445944, 2.3293;         !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_bot_ZN_1 Mass,                !- Name
@@ -1686,7 +1676,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -1714,7 +1704,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_bot_ZN_1 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_bot_ZN_1 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -1783,7 +1773,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_bot_ZN_2_Wall_East_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_bot_ZN_2_Wall_East,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1791,10 +1781,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  49.911, -0.534787657490764, 2.35032267724954, !- X,Y,Z Vertex 1 {m}
-  49.911, -0.534787657490764, 1.00027732275046, !- X,Y,Z Vertex 2 {m}
-  49.911, 33.8084876574908, 1.00027732275046, !- X,Y,Z Vertex 3 {m}
-  49.911, 33.8084876574908, 2.35032267724954; !- X,Y,Z Vertex 4 {m}
+  49.911, -1.47788544609973, 2.38739615893329, !- X,Y,Z Vertex 1 {m}
+  49.911, -1.47788544609973, 0.963203841066715, !- X,Y,Z Vertex 2 {m}
+  49.911, 34.7515854460997, 0.963203841066715, !- X,Y,Z Vertex 3 {m}
+  49.911, 34.7515854460997, 2.38739615893329; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_bot_ZN_2_Wall_North,          !- Name
@@ -1843,16 +1833,6 @@ BuildingSurface:Detailed,
   45.3375, 28.7006, 0,                    !- X,Y,Z Vertex 2 {m}
   45.3375, 4.5732, 0,                     !- X,Y,Z Vertex 3 {m}
   45.3375, 4.5732, 2.7432;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_bot_ZN_2_Wall_East_Window - Overhang, !- Name
-  Perimeter_bot_ZN_2_Wall_East,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.911, 33.2737, 2.3293,                !- X,Y,Z Vertex 1 {m}
-  49.911, 0, 2.3293,                      !- X,Y,Z Vertex 2 {m}
-  50.134959445944, 0, 2.3293,             !- X,Y,Z Vertex 3 {m}
-  50.134959445944, 33.2737, 2.3293;       !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_bot_ZN_2 Mass,                !- Name
@@ -1921,7 +1901,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -1949,7 +1929,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_bot_ZN_2 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_bot_ZN_2 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -2034,7 +2014,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_bot_ZN_3_Wall_North_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_bot_ZN_3_Wall_North,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2042,10 +2022,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  50.7121726464254, 33.2738, 2.35032267724954, !- X,Y,Z Vertex 1 {m}
-  50.7121726464254, 33.2738, 1.00027732275046, !- X,Y,Z Vertex 2 {m}
-  -0.802172646425372, 33.2738, 1.00027732275046, !- X,Y,Z Vertex 3 {m}
-  -0.802172646425372, 33.2738, 2.35032267724954; !- X,Y,Z Vertex 4 {m}
+  52.1268037403366, 33.2738, 2.38739615893329, !- X,Y,Z Vertex 1 {m}
+  52.1268037403366, 33.2738, 0.963203841066715, !- X,Y,Z Vertex 2 {m}
+  -2.21680374033659, 33.2738, 0.963203841066715, !- X,Y,Z Vertex 3 {m}
+  -2.21680374033659, 33.2738, 2.38739615893329; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_bot_ZN_3_Wall_South,          !- Name
@@ -2078,16 +2058,6 @@ BuildingSurface:Detailed,
   0, 33.2738, 0,                          !- X,Y,Z Vertex 2 {m}
   4.5732, 28.7006, 0,                     !- X,Y,Z Vertex 3 {m}
   4.5732, 28.7006, 2.7432;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_bot_ZN_3_Wall_North_Window - Overhang, !- Name
-  Perimeter_bot_ZN_3_Wall_North,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 33.2738, 2.3293,                     !- X,Y,Z Vertex 1 {m}
-  49.91, 33.2738, 2.3293,                 !- X,Y,Z Vertex 2 {m}
-  49.91, 33.497759445944, 2.3293,         !- X,Y,Z Vertex 3 {m}
-  0, 33.497759445944, 2.3293;             !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_bot_ZN_3 Mass,                !- Name
@@ -2156,7 +2126,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -2184,7 +2154,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_bot_ZN_3 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_bot_ZN_3 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -2301,7 +2271,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_bot_ZN_4_Wall_West_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_bot_ZN_4_Wall_West,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2309,20 +2279,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  0, 33.8084876574908, 2.35032267724954,  !- X,Y,Z Vertex 1 {m}
-  0, 33.8084876574908, 1.00027732275046,  !- X,Y,Z Vertex 2 {m}
-  0, -0.534787657490764, 1.00027732275046, !- X,Y,Z Vertex 3 {m}
-  0, -0.534787657490764, 2.35032267724954; !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_bot_ZN_4_Wall_West_Window - Overhang, !- Name
-  Perimeter_bot_ZN_4_Wall_West,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 0, 2.3293,                           !- X,Y,Z Vertex 1 {m}
-  0, 33.2737, 2.3293,                     !- X,Y,Z Vertex 2 {m}
-  -0.223959445944, 33.2737, 2.3293,       !- X,Y,Z Vertex 3 {m}
-  -0.223959445944, 0, 2.3293;             !- X,Y,Z Vertex 4 {m}
+  0, 34.7515854460997, 2.38739615893329,  !- X,Y,Z Vertex 1 {m}
+  0, 34.7515854460997, 0.963203841066715, !- X,Y,Z Vertex 2 {m}
+  0, -1.47788544609973, 0.963203841066715, !- X,Y,Z Vertex 3 {m}
+  0, -1.47788544609973, 2.38739615893329; !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_bot_ZN_4 Mass,                !- Name
@@ -2391,7 +2351,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -2419,7 +2379,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_bot_ZN_4 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_bot_ZN_4 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -2520,7 +2480,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_mid_ZN_1_Wall_South_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_mid_ZN_1_Wall_South,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2528,10 +2488,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  -0.802172646425372, 0, 6.31272267724954, !- X,Y,Z Vertex 1 {m}
-  -0.802172646425372, 0, 4.96267732275046, !- X,Y,Z Vertex 2 {m}
-  50.7121726464254, 0, 4.96267732275046,  !- X,Y,Z Vertex 3 {m}
-  50.7121726464254, 0, 6.31272267724954;  !- X,Y,Z Vertex 4 {m}
+  -2.21680374033659, 0, 6.34979615893328, !- X,Y,Z Vertex 1 {m}
+  -2.21680374033659, 0, 4.92560384106671, !- X,Y,Z Vertex 2 {m}
+  52.1268037403366, 0, 4.92560384106671,  !- X,Y,Z Vertex 3 {m}
+  52.1268037403366, 0, 6.34979615893328;  !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_mid_ZN_1_Wall_West,           !- Name
@@ -2548,16 +2508,6 @@ BuildingSurface:Detailed,
   4.5732, 4.5732, 3.9624,                 !- X,Y,Z Vertex 2 {m}
   0, 0, 3.9624,                           !- X,Y,Z Vertex 3 {m}
   0, 0, 6.7056;                           !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_mid_ZN_1_Wall_South_Window - Overhang, !- Name
-  Perimeter_mid_ZN_1_Wall_South,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.91, 0, 6.2917,                       !- X,Y,Z Vertex 1 {m}
-  0, 0, 6.2917,                           !- X,Y,Z Vertex 2 {m}
-  0, -0.223959445944, 6.2917,             !- X,Y,Z Vertex 3 {m}
-  49.91, -0.223959445944, 6.2917;         !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_mid_ZN_1 Mass,                !- Name
@@ -2626,7 +2576,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -2654,7 +2604,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_mid_ZN_1 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_mid_ZN_1 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -2723,7 +2673,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_mid_ZN_2_Wall_East_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_mid_ZN_2_Wall_East,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2731,10 +2681,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  49.911, -0.534787657490764, 6.31272267724954, !- X,Y,Z Vertex 1 {m}
-  49.911, -0.534787657490764, 4.96267732275046, !- X,Y,Z Vertex 2 {m}
-  49.911, 33.8084876574908, 4.96267732275046, !- X,Y,Z Vertex 3 {m}
-  49.911, 33.8084876574908, 6.31272267724954; !- X,Y,Z Vertex 4 {m}
+  49.911, -1.47788544609973, 6.34979615893328, !- X,Y,Z Vertex 1 {m}
+  49.911, -1.47788544609973, 4.92560384106671, !- X,Y,Z Vertex 2 {m}
+  49.911, 34.7515854460997, 4.92560384106671, !- X,Y,Z Vertex 3 {m}
+  49.911, 34.7515854460997, 6.34979615893328; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_mid_ZN_2_Wall_North,          !- Name
@@ -2783,16 +2733,6 @@ BuildingSurface:Detailed,
   45.3375, 28.7006, 3.9624,               !- X,Y,Z Vertex 2 {m}
   45.3375, 4.5732, 3.9624,                !- X,Y,Z Vertex 3 {m}
   45.3375, 4.5732, 6.7056;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_mid_ZN_2_Wall_East_Window - Overhang, !- Name
-  Perimeter_mid_ZN_2_Wall_East,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.911, 33.2737, 6.2917,                !- X,Y,Z Vertex 1 {m}
-  49.911, 0, 6.2917,                      !- X,Y,Z Vertex 2 {m}
-  50.134959445944, 0, 6.2917,             !- X,Y,Z Vertex 3 {m}
-  50.134959445944, 33.2737, 6.2917;       !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_mid_ZN_2 Mass,                !- Name
@@ -2861,7 +2801,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -2889,7 +2829,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_mid_ZN_2 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_mid_ZN_2 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -2974,7 +2914,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_mid_ZN_3_Wall_North_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_mid_ZN_3_Wall_North,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2982,10 +2922,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  50.7121726464254, 33.2738, 6.31272267724954, !- X,Y,Z Vertex 1 {m}
-  50.7121726464254, 33.2738, 4.96267732275046, !- X,Y,Z Vertex 2 {m}
-  -0.802172646425372, 33.2738, 4.96267732275046, !- X,Y,Z Vertex 3 {m}
-  -0.802172646425372, 33.2738, 6.31272267724954; !- X,Y,Z Vertex 4 {m}
+  52.1268037403366, 33.2738, 6.34979615893328, !- X,Y,Z Vertex 1 {m}
+  52.1268037403366, 33.2738, 4.92560384106671, !- X,Y,Z Vertex 2 {m}
+  -2.21680374033659, 33.2738, 4.92560384106671, !- X,Y,Z Vertex 3 {m}
+  -2.21680374033659, 33.2738, 6.34979615893328; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_mid_ZN_3_Wall_South,          !- Name
@@ -3018,16 +2958,6 @@ BuildingSurface:Detailed,
   0, 33.2738, 3.9624,                     !- X,Y,Z Vertex 2 {m}
   4.5732, 28.7006, 3.9624,                !- X,Y,Z Vertex 3 {m}
   4.5732, 28.7006, 6.7056;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_mid_ZN_3_Wall_North_Window - Overhang, !- Name
-  Perimeter_mid_ZN_3_Wall_North,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 33.2738, 6.2917,                     !- X,Y,Z Vertex 1 {m}
-  49.91, 33.2738, 6.2917,                 !- X,Y,Z Vertex 2 {m}
-  49.91, 33.497759445944, 6.2917,         !- X,Y,Z Vertex 3 {m}
-  0, 33.497759445944, 6.2917;             !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_mid_ZN_3 Mass,                !- Name
@@ -3096,7 +3026,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -3124,7 +3054,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_mid_ZN_3 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_mid_ZN_3 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -3241,7 +3171,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_mid_ZN_4_Wall_West_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_mid_ZN_4_Wall_West,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -3249,20 +3179,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  0, 33.8084876574908, 6.31272267724954,  !- X,Y,Z Vertex 1 {m}
-  0, 33.8084876574908, 4.96267732275046,  !- X,Y,Z Vertex 2 {m}
-  0, -0.534787657490764, 4.96267732275046, !- X,Y,Z Vertex 3 {m}
-  0, -0.534787657490764, 6.31272267724954; !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_mid_ZN_4_Wall_West_Window - Overhang, !- Name
-  Perimeter_mid_ZN_4_Wall_West,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 0, 6.2917,                           !- X,Y,Z Vertex 1 {m}
-  0, 33.2737, 6.2917,                     !- X,Y,Z Vertex 2 {m}
-  -0.223959445944, 33.2737, 6.2917,       !- X,Y,Z Vertex 3 {m}
-  -0.223959445944, 0, 6.2917;             !- X,Y,Z Vertex 4 {m}
+  0, 34.7515854460997, 6.34979615893328,  !- X,Y,Z Vertex 1 {m}
+  0, 34.7515854460997, 4.92560384106671,  !- X,Y,Z Vertex 2 {m}
+  0, -1.47788544609973, 4.92560384106671, !- X,Y,Z Vertex 3 {m}
+  0, -1.47788544609973, 6.34979615893328; !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_mid_ZN_4 Mass,                !- Name
@@ -3331,7 +3251,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -3359,7 +3279,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_mid_ZN_4 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_mid_ZN_4 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -3460,7 +3380,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_top_ZN_1_Wall_South_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_top_ZN_1_Wall_South,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -3468,10 +3388,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  -0.802172646425372, 0, 10.2751226772495, !- X,Y,Z Vertex 1 {m}
-  -0.802172646425372, 0, 8.92507732275046, !- X,Y,Z Vertex 2 {m}
-  50.7121726464254, 0, 8.92507732275046,  !- X,Y,Z Vertex 3 {m}
-  50.7121726464254, 0, 10.2751226772495;  !- X,Y,Z Vertex 4 {m}
+  -2.21680374033659, 0, 10.3121961589333, !- X,Y,Z Vertex 1 {m}
+  -2.21680374033659, 0, 8.88800384106671, !- X,Y,Z Vertex 2 {m}
+  52.1268037403366, 0, 8.88800384106671,  !- X,Y,Z Vertex 3 {m}
+  52.1268037403366, 0, 10.3121961589333;  !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_top_ZN_1_Wall_West,           !- Name
@@ -3488,16 +3408,6 @@ BuildingSurface:Detailed,
   4.5732, 4.5732, 7.9248,                 !- X,Y,Z Vertex 2 {m}
   0, 0, 7.9248,                           !- X,Y,Z Vertex 3 {m}
   0, 0, 10.668;                           !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_top_ZN_1_Wall_South_Window - Overhang, !- Name
-  Perimeter_top_ZN_1_Wall_South,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.91, 0, 10.2541,                      !- X,Y,Z Vertex 1 {m}
-  0, 0, 10.2541,                          !- X,Y,Z Vertex 2 {m}
-  0, -0.223959445944, 10.2541,            !- X,Y,Z Vertex 3 {m}
-  49.91, -0.223959445944, 10.2541;        !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_top_ZN_1 Mass,                !- Name
@@ -3566,7 +3476,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -3594,7 +3504,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_top_ZN_1 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_top_ZN_1 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -3663,7 +3573,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_top_ZN_2_Wall_East_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_top_ZN_2_Wall_East,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -3671,10 +3581,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  49.911, -0.534787657490764, 10.2751226772495, !- X,Y,Z Vertex 1 {m}
-  49.911, -0.534787657490764, 8.92507732275046, !- X,Y,Z Vertex 2 {m}
-  49.911, 33.8084876574908, 8.92507732275046, !- X,Y,Z Vertex 3 {m}
-  49.911, 33.8084876574908, 10.2751226772495; !- X,Y,Z Vertex 4 {m}
+  49.911, -1.47788544609973, 10.3121961589333, !- X,Y,Z Vertex 1 {m}
+  49.911, -1.47788544609973, 8.88800384106671, !- X,Y,Z Vertex 2 {m}
+  49.911, 34.7515854460997, 8.88800384106671, !- X,Y,Z Vertex 3 {m}
+  49.911, 34.7515854460997, 10.3121961589333; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_top_ZN_2_Wall_North,          !- Name
@@ -3723,16 +3633,6 @@ BuildingSurface:Detailed,
   45.3375, 28.7006, 7.9248,               !- X,Y,Z Vertex 2 {m}
   45.3375, 4.5732, 7.9248,                !- X,Y,Z Vertex 3 {m}
   45.3375, 4.5732, 10.668;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_top_ZN_2_Wall_East_Window - Overhang, !- Name
-  Perimeter_top_ZN_2_Wall_East,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  49.911, 33.2737, 10.2541,               !- X,Y,Z Vertex 1 {m}
-  49.911, 0, 10.2541,                     !- X,Y,Z Vertex 2 {m}
-  50.134959445944, 0, 10.2541,            !- X,Y,Z Vertex 3 {m}
-  50.134959445944, 33.2737, 10.2541;      !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_top_ZN_2 Mass,                !- Name
@@ -3801,7 +3701,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -3829,7 +3729,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_top_ZN_2 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_top_ZN_2 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -3914,7 +3814,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_top_ZN_3_Wall_North_Window,   !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_top_ZN_3_Wall_North,          !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -3922,10 +3822,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  50.7121726464254, 33.2738, 10.2751226772495, !- X,Y,Z Vertex 1 {m}
-  50.7121726464254, 33.2738, 8.92507732275046, !- X,Y,Z Vertex 2 {m}
-  -0.802172646425372, 33.2738, 8.92507732275046, !- X,Y,Z Vertex 3 {m}
-  -0.802172646425372, 33.2738, 10.2751226772495; !- X,Y,Z Vertex 4 {m}
+  52.1268037403366, 33.2738, 10.3121961589333, !- X,Y,Z Vertex 1 {m}
+  52.1268037403366, 33.2738, 8.88800384106671, !- X,Y,Z Vertex 2 {m}
+  -2.21680374033659, 33.2738, 8.88800384106671, !- X,Y,Z Vertex 3 {m}
+  -2.21680374033659, 33.2738, 10.3121961589333; !- X,Y,Z Vertex 4 {m}
 
 BuildingSurface:Detailed,
   Perimeter_top_ZN_3_Wall_South,          !- Name
@@ -3958,16 +3858,6 @@ BuildingSurface:Detailed,
   0, 33.2738, 7.9248,                     !- X,Y,Z Vertex 2 {m}
   4.5732, 28.7006, 7.9248,                !- X,Y,Z Vertex 3 {m}
   4.5732, 28.7006, 10.668;                !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_top_ZN_3_Wall_North_Window - Overhang, !- Name
-  Perimeter_top_ZN_3_Wall_North,          !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 33.2738, 10.2541,                    !- X,Y,Z Vertex 1 {m}
-  49.91, 33.2738, 10.2541,                !- X,Y,Z Vertex 2 {m}
-  49.91, 33.497759445944, 10.2541,        !- X,Y,Z Vertex 3 {m}
-  0, 33.497759445944, 10.2541;            !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_top_ZN_3 Mass,                !- Name
@@ -4036,7 +3926,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -4064,7 +3954,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_top_ZN_3 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_top_ZN_3 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -4181,7 +4071,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Perimeter_top_ZN_4_Wall_West_Window,    !- Name
   Window,                                 !- Surface Type
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Construction Name
+  Window U-0.562735759 and Window SHGC 0.397, !- Construction Name
   Perimeter_top_ZN_4_Wall_West,           !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -4189,20 +4079,10 @@ FenestrationSurface:Detailed,
   ,                                       !- Frame and Divider Name
   1,                                      !- Multiplier
   ,                                       !- Number of Vertices
-  0, 33.8084876574908, 10.2751226772495,  !- X,Y,Z Vertex 1 {m}
-  0, 33.8084876574908, 8.92507732275046,  !- X,Y,Z Vertex 2 {m}
-  0, -0.534787657490764, 8.92507732275046, !- X,Y,Z Vertex 3 {m}
-  0, -0.534787657490764, 10.2751226772495; !- X,Y,Z Vertex 4 {m}
-
-Shading:Zone:Detailed,
-  Perimeter_top_ZN_4_Wall_West_Window - Overhang, !- Name
-  Perimeter_top_ZN_4_Wall_West,           !- Base Surface Name
-  ,                                       !- Transmittance Schedule Name
-  ,                                       !- Number of Vertices
-  0, 0, 10.2541,                          !- X,Y,Z Vertex 1 {m}
-  0, 33.2737, 10.2541,                    !- X,Y,Z Vertex 2 {m}
-  -0.223959445944, 33.2737, 10.2541,      !- X,Y,Z Vertex 3 {m}
-  -0.223959445944, 0, 10.2541;            !- X,Y,Z Vertex 4 {m}
+  0, 34.7515854460997, 10.3121961589333,  !- X,Y,Z Vertex 1 {m}
+  0, 34.7515854460997, 8.88800384106671,  !- X,Y,Z Vertex 2 {m}
+  0, -1.47788544609973, 8.88800384106671, !- X,Y,Z Vertex 3 {m}
+  0, -1.47788544609973, 10.3121961589333; !- X,Y,Z Vertex 4 {m}
 
 InternalMass,
   Perimeter_top_ZN_4 Mass,                !- Name
@@ -4271,7 +4151,7 @@ Sizing:Zone,
   11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
   0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
   0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name
   ,                                       !- Zone Heating Sizing Factor
   ,                                       !- Zone Cooling Sizing Factor
   DesignDay,                              !- Cooling Design Air Flow Method
@@ -4299,7 +4179,7 @@ Controller:MechanicalVentilation,
   ZoneSum,                                !- System Outdoor Air Method
   ,                                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
   Perimeter_top_ZN_4 ZN,                  !- Zone Name 1
-  Office WholeBuilding - Md Office Ventilation (25.99 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
+  Office WholeBuilding - Md Office Ventilation (26.0 ft3/min-person, !- Design Specification Outdoor Air Object Name 1
   Perimeter_top_ZN_4 ZN Design Spec Zone Air Dist; !- Design Specification Zone Air Distribution Object Name 1
 
 Zone,
@@ -4522,7 +4402,7 @@ Timestep,
 
 Sizing:Parameters,
   1.2,                                    !- Heating Sizing Factor
-  1.13317747;                             !- Cooling Sizing Factor
+  1.166388396;                            !- Cooling Sizing Factor
 
 GlobalGeometryRules,
   UpperLeftCorner,                        !- Starting Vertex Position
@@ -4734,9 +4614,9 @@ Material:NoMass,
   0.7;                                    !- Visible Absorptance
 
 Material:NoMass,
-  Typical Insulation R-1.96_R-value 4.021047 (ft^2*h*R/Btu)_R-value 4.235099507 (ft^2*h*R/Btu), !- Name
+  Typical Insulation R-1.96_R-value 4.021047 (ft^2*h*R/Btu)_R-value 4.994844847 (ft^2*h*R/Btu), !- Name
   Smooth,                                 !- Roughness
-  0.745844152090613,                      !- Thermal Resistance {m2-K/W}
+  0.879643043469789,                      !- Thermal Resistance {m2-K/W}
   0.9,                                    !- Thermal Absorptance
   0.7,                                    !- Solar Absorptance
   0.7;                                    !- Visible Absorptance
@@ -4758,9 +4638,9 @@ Material:NoMass,
   0.7;                                    !- Visible Absorptance
 
 Material:NoMass,
-  Typical Insulation R-8.88_R-value 12.76634172 (ft^2*h*R/Btu)_R-value 23.09360497 (ft^2*h*R/Btu), !- Name
+  Typical Insulation R-8.88_R-value 12.76634172 (ft^2*h*R/Btu)_R-value 23.68275835 (ft^2*h*R/Btu), !- Name
   Smooth,                                 !- Roughness
-  4.06701901315331,                       !- Thermal Resistance {m2-K/W}
+  4.17077492312216,                       !- Thermal Resistance {m2-K/W}
   0.9,                                    !- Thermal Absorptance
   0.7,                                    !- Solar Absorptance
   0.7;                                    !- Visible Absorptance
@@ -4784,9 +4664,9 @@ WindowMaterial:Glazing,
   No;                                     !- Solar Diffusing
 
 WindowMaterial:SimpleGlazingSystem,
-  Simple Glazing Material U-0.609146006 and SHGC 0.402092381, !- Name
-  3.4588914352555,                        !- U-Factor {W/m2-K}
-  0.402092381;                            !- Solar Heat Gain Coefficient
+  Simple Glazing Material U-0.562735759 and SHGC 0.397, !- Name
+  3.19536183106337,                       !- U-Factor {W/m2-K}
+  0.397;                                  !- Solar Heat Gain Coefficient
 
 WindowMaterial:SimpleGlazingSystem,
   Simple Glazing Material U-0.620788435 and SHGC 0.407, !- Name
@@ -4838,7 +4718,7 @@ Construction,
 Construction,
   Typical IEAD Roof R-10.0 adj roof insulation adj roof insulation, !- Name
   Roof Membrane,                          !- Layer 1
-  Typical Insulation R-8.88_R-value 12.76634172 (ft^2*h*R/Btu)_R-value 23.09360497 (ft^2*h*R/Btu), !- Layer 2
+  Typical Insulation R-8.88_R-value 12.76634172 (ft^2*h*R/Btu)_R-value 23.68275835 (ft^2*h*R/Btu), !- Layer 2
   Metal Roof Surface;                     !- Layer 3
 
 Construction,
@@ -4868,7 +4748,7 @@ Construction,
   Typical Insulated Exterior Mass Wall R-4.35 adj ext wall insulation adj ext wall insulation, !- Name
   1IN Stucco,                             !- Layer 1
   8IN CONCRETE HW RefBldg,                !- Layer 2
-  Typical Insulation R-1.96_R-value 4.021047 (ft^2*h*R/Btu)_R-value 4.235099507 (ft^2*h*R/Btu), !- Layer 3
+  Typical Insulation R-1.96_R-value 4.021047 (ft^2*h*R/Btu)_R-value 4.994844847 (ft^2*h*R/Btu), !- Layer 3
   1/2IN Gypsum;                           !- Layer 4
 
 Construction,
@@ -4917,8 +4797,8 @@ Construction,
   G01 13mm gypsum board;                  !- Layer 2
 
 Construction,
-  Window U-0.609146006 and Window SHGC 0.402092381, !- Name
-  Simple Glazing Material U-0.609146006 and SHGC 0.402092381; !- Layer 1
+  Window U-0.562735759 and Window SHGC 0.397, !- Name
+  Simple Glazing Material U-0.562735759 and SHGC 0.397; !- Layer 1
 
 Construction,
   Window U-0.620788435 and Window SHGC 0.407, !- Name
@@ -6293,7 +6173,7 @@ Schedule:Day:Interval,
   0;                                      !- Value Until Time 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {82c162a8-a0d4-483d-9ecd-03ff7a3fedf2}, !- Name
+  Schedule:Week:Daily {e09c89f6-01fb-4edc-a059-59042be9d69a}, !- Name
   Air Velocity Schedule Default,          !- Sunday Schedule:Day Name
   Air Velocity Schedule Default,          !- Monday Schedule:Day Name
   Air Velocity Schedule Default,          !- Tuesday Schedule:Day Name
@@ -6310,14 +6190,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Air Velocity Schedule,                  !- Name
   Velocity,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {82c162a8-a0d4-483d-9ecd-03ff7a3fedf2}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {e09c89f6-01fb-4edc-a059-59042be9d69a}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {882f27c0-812e-4627-bcb5-b9d3c5e15e70}, !- Name
+  Schedule:Week:Daily {47e079c2-9ce3-49b9-863c-7b6102204daa}, !- Name
   Clothing Schedule Default Winter Clothes, !- Sunday Schedule:Day Name
   Clothing Schedule Default Winter Clothes, !- Monday Schedule:Day Name
   Clothing Schedule Default Winter Clothes, !- Tuesday Schedule:Day Name
@@ -6334,14 +6214,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Clothing Schedule,                      !- Name
   Any Number,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {882f27c0-812e-4627-bcb5-b9d3c5e15e70}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {47e079c2-9ce3-49b9-863c-7b6102204daa}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {24870040-7669-452d-aa12-0e16fcc6e765}, !- Name
+  Schedule:Week:Daily {c71e56fe-2fba-4c8f-a3f3-5f95d52a60ea}, !- Name
   Economizer Max OA Fraction 70 pct Default, !- Sunday Schedule:Day Name
   Economizer Max OA Fraction 70 pct Default, !- Monday Schedule:Day Name
   Economizer Max OA Fraction 70 pct Default, !- Tuesday Schedule:Day Name
@@ -6358,14 +6238,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Economizer Max OA Fraction 70 pct,      !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {24870040-7669-452d-aa12-0e16fcc6e765}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {c71e56fe-2fba-4c8f-a3f3-5f95d52a60ea}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {18d25891-d4ba-4c9b-b7b2-0b084362897d}, !- Name
+  Schedule:Week:Daily {8d134881-5b91-4d17-be0e-7746c5fbf94c}, !- Name
   Medium Office Activity Default,         !- Sunday Schedule:Day Name
   Medium Office Activity Default,         !- Monday Schedule:Day Name
   Medium Office Activity Default,         !- Tuesday Schedule:Day Name
@@ -6382,14 +6262,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office Activity,                 !- Name
   ActivityLevel,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {18d25891-d4ba-4c9b-b7b2-0b084362897d}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {8d134881-5b91-4d17-be0e-7746c5fbf94c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d07e2df7-b9f5-4f9d-807b-8d655aa702f3}, !- Name
+  Schedule:Week:Daily {695311d6-fb3d-4f2c-9474-f38ef1715a62}, !- Name
   Schedule Day 75,                        !- Sunday Schedule:Day Name
   Schedule Day 21,                        !- Monday Schedule:Day Name
   Schedule Day 21,                        !- Tuesday Schedule:Day Name
@@ -6406,14 +6286,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office BLDG ELEVATORS,           !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {d07e2df7-b9f5-4f9d-807b-8d655aa702f3}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {695311d6-fb3d-4f2c-9474-f38ef1715a62}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {04474097-e66c-4db1-8abc-bedb4eef9a10}, !- Name
+  Schedule:Week:Daily {924da223-1906-41af-a848-b4b4f2849ea1}, !- Name
   Medium Office Bldg Equip Sun Day,       !- Sunday Schedule:Day Name
   Medium Office Bldg Equip Default|Wkdy Day, !- Monday Schedule:Day Name
   Medium Office Bldg Equip Default|Wkdy Day, !- Tuesday Schedule:Day Name
@@ -6430,14 +6310,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office Bldg Equip,               !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {04474097-e66c-4db1-8abc-bedb4eef9a10}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {924da223-1906-41af-a848-b4b4f2849ea1}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {24d599aa-a1a5-4b70-ab6a-b2ef5edcb14e}, !- Name
+  Schedule:Week:Daily {adae24a1-97bb-48fa-a030-7f97f8620692}, !- Name
   Medium Office Bldg Occ WntrDsn|Sun Day, !- Sunday Schedule:Day Name
   Medium Office Bldg Occ Default|Wkdy Day, !- Monday Schedule:Day Name
   Medium Office Bldg Occ Default|Wkdy Day, !- Tuesday Schedule:Day Name
@@ -6454,14 +6334,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office Bldg Occ,                 !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {24d599aa-a1a5-4b70-ab6a-b2ef5edcb14e}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {adae24a1-97bb-48fa-a030-7f97f8620692}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d3d83ce3-b190-4668-8b50-9cdb6dab9cf6}, !- Name
+  Schedule:Week:Daily {6f5f7cd9-68e7-4894-8ae4-06153be0f0a8}, !- Name
   Medium Office Bldg Swh Sun Day,         !- Sunday Schedule:Day Name
   Medium Office Bldg Swh Default,         !- Monday Schedule:Day Name
   Medium Office Bldg Swh Default,         !- Tuesday Schedule:Day Name
@@ -6478,14 +6358,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office Bldg Swh,                 !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {d3d83ce3-b190-4668-8b50-9cdb6dab9cf6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {6f5f7cd9-68e7-4894-8ae4-06153be0f0a8}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {7db440f5-c3bb-46db-be25-d515efff6d06}, !- Name
+  Schedule:Week:Daily {cc0a4974-454f-41b3-b97d-33c42ceff83e}, !- Name
   Medium Office Infil Quarter On Sun Day, !- Sunday Schedule:Day Name
   Medium Office Infil Quarter On Default, !- Monday Schedule:Day Name
   Medium Office Infil Quarter On Default, !- Tuesday Schedule:Day Name
@@ -6502,14 +6382,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Medium Office Infil Quarter On,         !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {7db440f5-c3bb-46db-be25-d515efff6d06}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {cc0a4974-454f-41b3-b97d-33c42ceff83e}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e47ab1dc-a237-48a5-8209-dc9470716e0f}, !- Name
+  Schedule:Week:Daily {7323d3b6-d41c-42d3-a2ae-1564af11464c}, !- Name
   Office Bldg Light Sun Day,              !- Sunday Schedule:Day Name
   Office Bldg Light Default,              !- Monday Schedule:Day Name
   Office Bldg Light Default,              !- Tuesday Schedule:Day Name
@@ -6526,14 +6406,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Bldg Light,                      !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {e47ab1dc-a237-48a5-8209-dc9470716e0f}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {7323d3b6-d41c-42d3-a2ae-1564af11464c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {7fdb48d8-2be8-4c78-8879-076bcb4c3e01}, !- Name
+  Schedule:Week:Daily {4f406603-f197-4878-a31b-ee2187890621}, !- Name
   OfficeMedium Exterior_Lgt_ALWAYS_ON Default, !- Sunday Schedule:Day Name
   OfficeMedium Exterior_Lgt_ALWAYS_ON Default, !- Monday Schedule:Day Name
   OfficeMedium Exterior_Lgt_ALWAYS_ON Default, !- Tuesday Schedule:Day Name
@@ -6550,14 +6430,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   OfficeMedium Exterior_Lgt_ALWAYS_ON,    !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {7fdb48d8-2be8-4c78-8879-076bcb4c3e01}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {4f406603-f197-4878-a31b-ee2187890621}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {77493b6b-4074-4aa9-b156-682b2a3e23bd}, !- Name
+  Schedule:Week:Daily {f6618320-70f6-422c-b246-b92a0720d122}, !- Name
   OfficeMedium HVACOperationSchd Default, !- Sunday Schedule:Day Name
   OfficeMedium HVACOperationSchd SmrDsn|Wkdy Day, !- Monday Schedule:Day Name
   OfficeMedium HVACOperationSchd SmrDsn|Wkdy Day, !- Tuesday Schedule:Day Name
@@ -6574,14 +6454,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   OfficeMedium HVACOperationSchd,         !- Name
   OnOff,                                  !- Schedule Type Limits Name
-  Schedule:Week:Daily {77493b6b-4074-4aa9-b156-682b2a3e23bd}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {f6618320-70f6-422c-b246-b92a0720d122}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {824ddb01-ccaa-4786-8d49-3740d7653412}, !- Name
+  Schedule:Week:Daily {2283746b-d33c-4f4d-94df-cecb2ddc70a4}, !- Name
   OfficeMedium MinOA_MotorizedDamper_Sched Default, !- Sunday Schedule:Day Name
   OfficeMedium MinOA_MotorizedDamper_Sched SmrDsn|Wkdy Day, !- Monday Schedule:Day Name
   OfficeMedium MinOA_MotorizedDamper_Sched SmrDsn|Wkdy Day, !- Tuesday Schedule:Day Name
@@ -6598,14 +6478,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   OfficeMedium MinOA_MotorizedDamper_Sched, !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {824ddb01-ccaa-4786-8d49-3740d7653412}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2283746b-d33c-4f4d-94df-cecb2ddc70a4}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d664824b-3b75-48f1-87ef-17cb56c3d573}, !- Name
+  Schedule:Week:Daily {8125eacf-cdc1-4d5e-bee8-869bef4bdb87}, !- Name
   RetailStandalone PSZ_Econ_MaxOAFrac_Sch Default, !- Sunday Schedule:Day Name
   RetailStandalone PSZ_Econ_MaxOAFrac_Sch Default, !- Monday Schedule:Day Name
   RetailStandalone PSZ_Econ_MaxOAFrac_Sch Default, !- Tuesday Schedule:Day Name
@@ -6622,14 +6502,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   RetailStandalone PSZ_Econ_MaxOAFrac_Sch, !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {d664824b-3b75-48f1-87ef-17cb56c3d573}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {8125eacf-cdc1-4d5e-bee8-869bef4bdb87}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {503d74a6-7761-4404-97c3-04c126e2eb69}, !- Name
+  Schedule:Week:Daily {97f0964e-f41f-48c2-902d-52d8cc66cc4c}, !- Name
   Schedule Day 24,                        !- Sunday Schedule:Day Name
   Schedule Day 24,                        !- Monday Schedule:Day Name
   Schedule Day 24,                        !- Tuesday Schedule:Day Name
@@ -6646,14 +6526,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 1,                     !- Name
   Temperature,                            !- Schedule Type Limits Name
-  Schedule:Week:Daily {503d74a6-7761-4404-97c3-04c126e2eb69}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {97f0964e-f41f-48c2-902d-52d8cc66cc4c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d0a46275-50cd-48aa-915f-7f6f0947051a}, !- Name
+  Schedule:Week:Daily {411af9bf-87e0-41cd-9523-b03d0afdf8f8}, !- Name
   Schedule Day 35,                        !- Sunday Schedule:Day Name
   Schedule Day 35,                        !- Monday Schedule:Day Name
   Schedule Day 35,                        !- Tuesday Schedule:Day Name
@@ -6670,14 +6550,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 10,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {d0a46275-50cd-48aa-915f-7f6f0947051a}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {411af9bf-87e0-41cd-9523-b03d0afdf8f8}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {eef56b61-4399-4bf7-916a-88cf826eee51}, !- Name
+  Schedule:Week:Daily {9fe9c946-17b2-4618-9247-340c8a94af24}, !- Name
   Schedule Day 36,                        !- Sunday Schedule:Day Name
   Schedule Day 36,                        !- Monday Schedule:Day Name
   Schedule Day 36,                        !- Tuesday Schedule:Day Name
@@ -6694,14 +6574,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 11,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {eef56b61-4399-4bf7-916a-88cf826eee51}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {9fe9c946-17b2-4618-9247-340c8a94af24}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e0064837-a4a8-46ad-a138-394e2e6c1f71}, !- Name
+  Schedule:Week:Daily {e5a49833-9758-42f9-a77a-f8d0cf301612}, !- Name
   Schedule Day 37,                        !- Sunday Schedule:Day Name
   Schedule Day 37,                        !- Monday Schedule:Day Name
   Schedule Day 37,                        !- Tuesday Schedule:Day Name
@@ -6718,14 +6598,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 12,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {e0064837-a4a8-46ad-a138-394e2e6c1f71}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {e5a49833-9758-42f9-a77a-f8d0cf301612}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {6f571f87-05ef-433e-ad97-2f7d7a126763}, !- Name
+  Schedule:Week:Daily {2e36b8e0-044a-4fa5-b323-602803929c93}, !- Name
   Schedule Day 38,                        !- Sunday Schedule:Day Name
   Schedule Day 38,                        !- Monday Schedule:Day Name
   Schedule Day 38,                        !- Tuesday Schedule:Day Name
@@ -6742,14 +6622,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 13,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {6f571f87-05ef-433e-ad97-2f7d7a126763}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2e36b8e0-044a-4fa5-b323-602803929c93}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {42842e28-923c-463e-a627-9058b5cdb756}, !- Name
+  Schedule:Week:Daily {e196907d-431e-4082-adf2-3bf4bda5c543}, !- Name
   Schedule Day 39,                        !- Sunday Schedule:Day Name
   Schedule Day 39,                        !- Monday Schedule:Day Name
   Schedule Day 39,                        !- Tuesday Schedule:Day Name
@@ -6766,14 +6646,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 14,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {42842e28-923c-463e-a627-9058b5cdb756}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {e196907d-431e-4082-adf2-3bf4bda5c543}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e708dcfe-81af-42b8-859d-52549ad35d59}, !- Name
+  Schedule:Week:Daily {287fc13d-603a-4ed2-82e0-315167d5c2d0}, !- Name
   Schedule Day 40,                        !- Sunday Schedule:Day Name
   Schedule Day 40,                        !- Monday Schedule:Day Name
   Schedule Day 40,                        !- Tuesday Schedule:Day Name
@@ -6790,14 +6670,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 15,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {e708dcfe-81af-42b8-859d-52549ad35d59}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {287fc13d-603a-4ed2-82e0-315167d5c2d0}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {fed05d2d-d732-42b2-91d4-dd9f8fb1a977}, !- Name
+  Schedule:Week:Daily {986c6795-ce40-4995-bbea-3ab1fd2a5460}, !- Name
   Schedule Day 41,                        !- Sunday Schedule:Day Name
   Schedule Day 41,                        !- Monday Schedule:Day Name
   Schedule Day 41,                        !- Tuesday Schedule:Day Name
@@ -6814,14 +6694,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 16,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {fed05d2d-d732-42b2-91d4-dd9f8fb1a977}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {986c6795-ce40-4995-bbea-3ab1fd2a5460}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ab813cac-e931-4991-b3c3-d0291814f6ce}, !- Name
+  Schedule:Week:Daily {3481eacb-eaac-4696-9d66-bf39399157b7}, !- Name
   Schedule Day 42,                        !- Sunday Schedule:Day Name
   Schedule Day 42,                        !- Monday Schedule:Day Name
   Schedule Day 42,                        !- Tuesday Schedule:Day Name
@@ -6838,14 +6718,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 17,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {ab813cac-e931-4991-b3c3-d0291814f6ce}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {3481eacb-eaac-4696-9d66-bf39399157b7}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {5ed4dcd8-f205-43d6-93ff-bc51bd5b476a}, !- Name
+  Schedule:Week:Daily {55680838-8ea4-4d13-8e59-d8ef4e3c8622}, !- Name
   Schedule Day 43,                        !- Sunday Schedule:Day Name
   Schedule Day 43,                        !- Monday Schedule:Day Name
   Schedule Day 43,                        !- Tuesday Schedule:Day Name
@@ -6862,14 +6742,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 18,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {5ed4dcd8-f205-43d6-93ff-bc51bd5b476a}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {55680838-8ea4-4d13-8e59-d8ef4e3c8622}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {92fe3043-31aa-4ff5-80ed-c7f18c42e388}, !- Name
+  Schedule:Week:Daily {f11d0b3b-313e-47da-a1eb-c224f5607ac5}, !- Name
   Schedule Day 44,                        !- Sunday Schedule:Day Name
   Schedule Day 44,                        !- Monday Schedule:Day Name
   Schedule Day 44,                        !- Tuesday Schedule:Day Name
@@ -6886,14 +6766,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 19,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {92fe3043-31aa-4ff5-80ed-c7f18c42e388}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {f11d0b3b-313e-47da-a1eb-c224f5607ac5}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {59f38d6c-5543-49ac-9f1c-59af02520972}, !- Name
+  Schedule:Week:Daily {2c9fd4dd-367f-4829-b980-650b103c65b2}, !- Name
   Schedule Day 25,                        !- Sunday Schedule:Day Name
   Schedule Day 25,                        !- Monday Schedule:Day Name
   Schedule Day 25,                        !- Tuesday Schedule:Day Name
@@ -6910,14 +6790,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 2,                     !- Name
   Temperature,                            !- Schedule Type Limits Name
-  Schedule:Week:Daily {59f38d6c-5543-49ac-9f1c-59af02520972}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2c9fd4dd-367f-4829-b980-650b103c65b2}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {52042ac9-da7a-4759-83f0-66faacff6fd8}, !- Name
+  Schedule:Week:Daily {e754c5bb-144a-4ab7-b9a5-9436fe9a4c3c}, !- Name
   Schedule Day 45,                        !- Sunday Schedule:Day Name
   Schedule Day 45,                        !- Monday Schedule:Day Name
   Schedule Day 45,                        !- Tuesday Schedule:Day Name
@@ -6934,14 +6814,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 20,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {52042ac9-da7a-4759-83f0-66faacff6fd8}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {e754c5bb-144a-4ab7-b9a5-9436fe9a4c3c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {fe4e0e65-41c8-43e7-932a-9295737f5c91}, !- Name
+  Schedule:Week:Daily {e77ea0be-38ac-4387-80fa-42a0868c88a3}, !- Name
   Schedule Day 46,                        !- Sunday Schedule:Day Name
   Schedule Day 46,                        !- Monday Schedule:Day Name
   Schedule Day 46,                        !- Tuesday Schedule:Day Name
@@ -6958,14 +6838,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 21,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {fe4e0e65-41c8-43e7-932a-9295737f5c91}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {e77ea0be-38ac-4387-80fa-42a0868c88a3}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {9b08999f-5221-4145-9fe9-3b2ab59bf94c}, !- Name
+  Schedule:Week:Daily {169da41a-faf2-4233-bdc3-067127555142}, !- Name
   Schedule Day 47,                        !- Sunday Schedule:Day Name
   Schedule Day 47,                        !- Monday Schedule:Day Name
   Schedule Day 47,                        !- Tuesday Schedule:Day Name
@@ -6982,14 +6862,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 22,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {9b08999f-5221-4145-9fe9-3b2ab59bf94c}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {169da41a-faf2-4233-bdc3-067127555142}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ced4b914-ecec-419a-a8c0-a7b354c40788}, !- Name
+  Schedule:Week:Daily {2ce1bc3d-818b-4b5c-9ec0-f8e0e32ec2ad}, !- Name
   Schedule Day 48,                        !- Sunday Schedule:Day Name
   Schedule Day 48,                        !- Monday Schedule:Day Name
   Schedule Day 48,                        !- Tuesday Schedule:Day Name
@@ -7006,14 +6886,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 23,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {ced4b914-ecec-419a-a8c0-a7b354c40788}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2ce1bc3d-818b-4b5c-9ec0-f8e0e32ec2ad}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3dfc4281-b7fe-4ee7-9e65-9492a3f5b65b}, !- Name
+  Schedule:Week:Daily {ffe62181-3aa0-454c-911f-78a7a2568c68}, !- Name
   Schedule Day 49,                        !- Sunday Schedule:Day Name
   Schedule Day 49,                        !- Monday Schedule:Day Name
   Schedule Day 49,                        !- Tuesday Schedule:Day Name
@@ -7030,14 +6910,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 24,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {3dfc4281-b7fe-4ee7-9e65-9492a3f5b65b}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {ffe62181-3aa0-454c-911f-78a7a2568c68}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {799eced3-bf5c-40d1-85d5-3621e5cf5508}, !- Name
+  Schedule:Week:Daily {302e3724-28f4-4861-88d0-3d2867b8f82a}, !- Name
   Schedule Day 50,                        !- Sunday Schedule:Day Name
   Schedule Day 50,                        !- Monday Schedule:Day Name
   Schedule Day 50,                        !- Tuesday Schedule:Day Name
@@ -7054,14 +6934,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 25,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {799eced3-bf5c-40d1-85d5-3621e5cf5508}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {302e3724-28f4-4861-88d0-3d2867b8f82a}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3f0f6408-f06c-4af9-806e-aaeaaf12abdd}, !- Name
+  Schedule:Week:Daily {44e9998e-9986-4d9e-9221-c61100b44c26}, !- Name
   Schedule Day 51,                        !- Sunday Schedule:Day Name
   Schedule Day 51,                        !- Monday Schedule:Day Name
   Schedule Day 51,                        !- Tuesday Schedule:Day Name
@@ -7078,14 +6958,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 26,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {3f0f6408-f06c-4af9-806e-aaeaaf12abdd}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {44e9998e-9986-4d9e-9221-c61100b44c26}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {a02b4320-c752-45cd-8392-7ed758bdc69d}, !- Name
+  Schedule:Week:Daily {7476cf53-db06-4088-a316-c06e3acc57a0}, !- Name
   Schedule Day 52,                        !- Sunday Schedule:Day Name
   Schedule Day 52,                        !- Monday Schedule:Day Name
   Schedule Day 52,                        !- Tuesday Schedule:Day Name
@@ -7102,14 +6982,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 27,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {a02b4320-c752-45cd-8392-7ed758bdc69d}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {7476cf53-db06-4088-a316-c06e3acc57a0}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ca70124b-fce1-42f9-9c60-b090d2d929cc}, !- Name
+  Schedule:Week:Daily {4d421c59-82ec-4ea0-a6f2-d793455fc843}, !- Name
   Schedule Day 53,                        !- Sunday Schedule:Day Name
   Schedule Day 53,                        !- Monday Schedule:Day Name
   Schedule Day 53,                        !- Tuesday Schedule:Day Name
@@ -7126,14 +7006,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 28,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {ca70124b-fce1-42f9-9c60-b090d2d929cc}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {4d421c59-82ec-4ea0-a6f2-d793455fc843}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3dc6a0fb-ca58-49a3-9d07-018be769db4b}, !- Name
+  Schedule:Week:Daily {49f212cb-262e-41a2-bd05-7454755c778f}, !- Name
   Schedule Day 54,                        !- Sunday Schedule:Day Name
   Schedule Day 54,                        !- Monday Schedule:Day Name
   Schedule Day 54,                        !- Tuesday Schedule:Day Name
@@ -7150,14 +7030,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 29,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {3dc6a0fb-ca58-49a3-9d07-018be769db4b}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {49f212cb-262e-41a2-bd05-7454755c778f}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {6918275a-997b-48ea-8c00-727f8d5976b9}, !- Name
+  Schedule:Week:Daily {a6045b86-5b5d-40c0-add9-a59fa3475fba}, !- Name
   Schedule Day 26,                        !- Sunday Schedule:Day Name
   Schedule Day 26,                        !- Monday Schedule:Day Name
   Schedule Day 26,                        !- Tuesday Schedule:Day Name
@@ -7174,14 +7054,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 3,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {6918275a-997b-48ea-8c00-727f8d5976b9}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {a6045b86-5b5d-40c0-add9-a59fa3475fba}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {4f0bb47b-387c-425c-8d1d-a4f82b988810}, !- Name
+  Schedule:Week:Daily {eaccafde-4279-41d7-a5f1-b0a4ed1700ae}, !- Name
   Schedule Day 55,                        !- Sunday Schedule:Day Name
   Schedule Day 55,                        !- Monday Schedule:Day Name
   Schedule Day 55,                        !- Tuesday Schedule:Day Name
@@ -7198,14 +7078,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 30,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {4f0bb47b-387c-425c-8d1d-a4f82b988810}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {eaccafde-4279-41d7-a5f1-b0a4ed1700ae}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {93d3a749-075a-4b91-a776-9119bb6cd0eb}, !- Name
+  Schedule:Week:Daily {2c8b587c-46c6-4ec6-9a36-e57fa9f34abb}, !- Name
   Schedule Day 56,                        !- Sunday Schedule:Day Name
   Schedule Day 56,                        !- Monday Schedule:Day Name
   Schedule Day 56,                        !- Tuesday Schedule:Day Name
@@ -7222,14 +7102,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 31,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {93d3a749-075a-4b91-a776-9119bb6cd0eb}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2c8b587c-46c6-4ec6-9a36-e57fa9f34abb}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {bedb1c58-7a0b-4af9-b83d-7800063ddaf6}, !- Name
+  Schedule:Week:Daily {5dfca888-6e5e-43b1-9dff-d5e5a5bda89b}, !- Name
   Schedule Day 57,                        !- Sunday Schedule:Day Name
   Schedule Day 57,                        !- Monday Schedule:Day Name
   Schedule Day 57,                        !- Tuesday Schedule:Day Name
@@ -7246,14 +7126,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 32,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {bedb1c58-7a0b-4af9-b83d-7800063ddaf6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {5dfca888-6e5e-43b1-9dff-d5e5a5bda89b}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {05f5613f-c294-4a6a-9df2-4d5240b5f78b}, !- Name
+  Schedule:Week:Daily {6fbd910d-bf64-4c36-9611-b593700684c6}, !- Name
   Schedule Day 58,                        !- Sunday Schedule:Day Name
   Schedule Day 58,                        !- Monday Schedule:Day Name
   Schedule Day 58,                        !- Tuesday Schedule:Day Name
@@ -7270,14 +7150,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 33,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {05f5613f-c294-4a6a-9df2-4d5240b5f78b}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {6fbd910d-bf64-4c36-9611-b593700684c6}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {11fd3ed2-ba56-458f-b07e-e37b4f6600fa}, !- Name
+  Schedule:Week:Daily {87c78dc6-083b-4a33-9b96-cf70c277089f}, !- Name
   Schedule Day 59,                        !- Sunday Schedule:Day Name
   Schedule Day 59,                        !- Monday Schedule:Day Name
   Schedule Day 59,                        !- Tuesday Schedule:Day Name
@@ -7294,14 +7174,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 34,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {11fd3ed2-ba56-458f-b07e-e37b4f6600fa}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {87c78dc6-083b-4a33-9b96-cf70c277089f}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {2a3dad7a-dea8-429c-84e2-bd59d1cb0d4f}, !- Name
+  Schedule:Week:Daily {ee219a5f-4f87-47a2-9dee-0ea2ba4ca8bb}, !- Name
   Schedule Day 60,                        !- Sunday Schedule:Day Name
   Schedule Day 60,                        !- Monday Schedule:Day Name
   Schedule Day 60,                        !- Tuesday Schedule:Day Name
@@ -7318,14 +7198,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 35,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {2a3dad7a-dea8-429c-84e2-bd59d1cb0d4f}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {ee219a5f-4f87-47a2-9dee-0ea2ba4ca8bb}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {9f5ba433-7dc8-4f93-9421-71392c127854}, !- Name
+  Schedule:Week:Daily {8c0e5d4b-afc1-497f-98e4-205bc49d9aed}, !- Name
   Schedule Day 61,                        !- Sunday Schedule:Day Name
   Schedule Day 61,                        !- Monday Schedule:Day Name
   Schedule Day 61,                        !- Tuesday Schedule:Day Name
@@ -7342,14 +7222,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 36,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {9f5ba433-7dc8-4f93-9421-71392c127854}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {8c0e5d4b-afc1-497f-98e4-205bc49d9aed}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ab29f3e3-338c-4fa6-99ba-927b62487bc6}, !- Name
+  Schedule:Week:Daily {a9e7087e-0530-4a75-9939-3be19f54943d}, !- Name
   Schedule Day 62,                        !- Sunday Schedule:Day Name
   Schedule Day 62,                        !- Monday Schedule:Day Name
   Schedule Day 62,                        !- Tuesday Schedule:Day Name
@@ -7366,14 +7246,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 37,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {ab29f3e3-338c-4fa6-99ba-927b62487bc6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {a9e7087e-0530-4a75-9939-3be19f54943d}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d5478151-ce60-4903-b0c1-5bcb7309ba05}, !- Name
+  Schedule:Week:Daily {cd76c4a4-6f7a-42bd-a25e-a22394062b52}, !- Name
   Schedule Day 63,                        !- Sunday Schedule:Day Name
   Schedule Day 63,                        !- Monday Schedule:Day Name
   Schedule Day 63,                        !- Tuesday Schedule:Day Name
@@ -7390,14 +7270,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 38,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {d5478151-ce60-4903-b0c1-5bcb7309ba05}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {cd76c4a4-6f7a-42bd-a25e-a22394062b52}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {fb057061-6f67-4329-bba1-92d15fb46500}, !- Name
+  Schedule:Week:Daily {671f6749-38fd-4288-b2da-cede59390fef}, !- Name
   Schedule Day 64,                        !- Sunday Schedule:Day Name
   Schedule Day 64,                        !- Monday Schedule:Day Name
   Schedule Day 64,                        !- Tuesday Schedule:Day Name
@@ -7414,14 +7294,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 39,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {fb057061-6f67-4329-bba1-92d15fb46500}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {671f6749-38fd-4288-b2da-cede59390fef}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {005dcdf0-bc47-46c3-a4a1-54e7195fe208}, !- Name
+  Schedule:Week:Daily {47beb538-d5e2-4cbd-ae87-32b6e29b8671}, !- Name
   Schedule Day 27,                        !- Sunday Schedule:Day Name
   Schedule Day 27,                        !- Monday Schedule:Day Name
   Schedule Day 27,                        !- Tuesday Schedule:Day Name
@@ -7438,14 +7318,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 4,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {005dcdf0-bc47-46c3-a4a1-54e7195fe208}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {47beb538-d5e2-4cbd-ae87-32b6e29b8671}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {cedef483-8a23-4fa8-8e67-e21d82ebb4a0}, !- Name
+  Schedule:Week:Daily {a5c6528d-e883-4b17-aab0-8024c4360563}, !- Name
   Schedule Day 65,                        !- Sunday Schedule:Day Name
   Schedule Day 65,                        !- Monday Schedule:Day Name
   Schedule Day 65,                        !- Tuesday Schedule:Day Name
@@ -7462,14 +7342,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 40,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {cedef483-8a23-4fa8-8e67-e21d82ebb4a0}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {a5c6528d-e883-4b17-aab0-8024c4360563}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {f7413525-e213-4d5b-b587-c1e32394c048}, !- Name
+  Schedule:Week:Daily {36afcf13-2bfb-47a1-b87c-ccbdd84d5650}, !- Name
   Schedule Day 66,                        !- Sunday Schedule:Day Name
   Schedule Day 66,                        !- Monday Schedule:Day Name
   Schedule Day 66,                        !- Tuesday Schedule:Day Name
@@ -7486,14 +7366,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 41,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {f7413525-e213-4d5b-b587-c1e32394c048}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {36afcf13-2bfb-47a1-b87c-ccbdd84d5650}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {286cb834-c9d2-40a1-91b4-dd93e8a9a13f}, !- Name
+  Schedule:Week:Daily {4f93e3db-f8f2-4a7f-98d2-807c7f61c54c}, !- Name
   Schedule Day 67,                        !- Sunday Schedule:Day Name
   Schedule Day 67,                        !- Monday Schedule:Day Name
   Schedule Day 67,                        !- Tuesday Schedule:Day Name
@@ -7510,14 +7390,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 42,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {286cb834-c9d2-40a1-91b4-dd93e8a9a13f}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {4f93e3db-f8f2-4a7f-98d2-807c7f61c54c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e0a786fd-8ab7-4afe-af4d-2348ba10ef89}, !- Name
+  Schedule:Week:Daily {ba0ec626-c094-4eb5-a236-33507b387506}, !- Name
   Schedule Day 68,                        !- Sunday Schedule:Day Name
   Schedule Day 68,                        !- Monday Schedule:Day Name
   Schedule Day 68,                        !- Tuesday Schedule:Day Name
@@ -7534,14 +7414,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 43,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {e0a786fd-8ab7-4afe-af4d-2348ba10ef89}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {ba0ec626-c094-4eb5-a236-33507b387506}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {0773fa3b-f188-4d9b-83b3-0fb5c46abd75}, !- Name
+  Schedule:Week:Daily {cb85424b-c648-4c47-b22b-6c604b8d8876}, !- Name
   Schedule Day 69,                        !- Sunday Schedule:Day Name
   Schedule Day 69,                        !- Monday Schedule:Day Name
   Schedule Day 69,                        !- Tuesday Schedule:Day Name
@@ -7558,14 +7438,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 44,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {0773fa3b-f188-4d9b-83b3-0fb5c46abd75}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {cb85424b-c648-4c47-b22b-6c604b8d8876}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {9c8f014e-5bd4-4811-af2b-5f78ae62ed1e}, !- Name
+  Schedule:Week:Daily {1d6bbdd3-685b-4eee-8dfb-c8d6e9833ce0}, !- Name
   Schedule Day 70,                        !- Sunday Schedule:Day Name
   Schedule Day 70,                        !- Monday Schedule:Day Name
   Schedule Day 70,                        !- Tuesday Schedule:Day Name
@@ -7582,14 +7462,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 45,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {9c8f014e-5bd4-4811-af2b-5f78ae62ed1e}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {1d6bbdd3-685b-4eee-8dfb-c8d6e9833ce0}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e1dfe3f8-c268-4e7a-bff6-b38f9e293c27}, !- Name
+  Schedule:Week:Daily {d8de8ef7-8d3a-4965-9b6e-56a130ee7200}, !- Name
   Schedule Day 71,                        !- Sunday Schedule:Day Name
   Schedule Day 71,                        !- Monday Schedule:Day Name
   Schedule Day 71,                        !- Tuesday Schedule:Day Name
@@ -7606,14 +7486,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 46,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {e1dfe3f8-c268-4e7a-bff6-b38f9e293c27}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {d8de8ef7-8d3a-4965-9b6e-56a130ee7200}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {2c3b0167-94c1-4a6f-acae-b03cda4b16d4}, !- Name
+  Schedule:Week:Daily {72ac868d-88f2-43ba-96a3-7d8a461fc7ba}, !- Name
   Schedule Day 72,                        !- Sunday Schedule:Day Name
   Schedule Day 72,                        !- Monday Schedule:Day Name
   Schedule Day 72,                        !- Tuesday Schedule:Day Name
@@ -7630,14 +7510,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 47,                    !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {2c3b0167-94c1-4a6f-acae-b03cda4b16d4}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {72ac868d-88f2-43ba-96a3-7d8a461fc7ba}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {795b0fe7-1174-456d-b1a2-d75da007930b}, !- Name
+  Schedule:Week:Daily {11ef7707-c7d2-4eb0-8b95-71c4a83bc6aa}, !- Name
   Schedule Day 28,                        !- Sunday Schedule:Day Name
   Schedule Day 28,                        !- Monday Schedule:Day Name
   Schedule Day 28,                        !- Tuesday Schedule:Day Name
@@ -7654,14 +7534,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 5,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {795b0fe7-1174-456d-b1a2-d75da007930b}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {11ef7707-c7d2-4eb0-8b95-71c4a83bc6aa}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {b8cd1c4b-6ced-4252-9c95-b8ed1ce78abd}, !- Name
+  Schedule:Week:Daily {021cfcb5-c284-49ee-9f68-9dcd00a78aac}, !- Name
   Schedule Day 31,                        !- Sunday Schedule:Day Name
   Schedule Day 31,                        !- Monday Schedule:Day Name
   Schedule Day 31,                        !- Tuesday Schedule:Day Name
@@ -7678,14 +7558,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 6,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {b8cd1c4b-6ced-4252-9c95-b8ed1ce78abd}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {021cfcb5-c284-49ee-9f68-9dcd00a78aac}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {599fb8ed-b3bc-4f37-b8b4-c4bccce4ede3}, !- Name
+  Schedule:Week:Daily {2b7ec7bb-58cb-483c-947d-b8b0a26ea57e}, !- Name
   Schedule Day 32,                        !- Sunday Schedule:Day Name
   Schedule Day 32,                        !- Monday Schedule:Day Name
   Schedule Day 32,                        !- Tuesday Schedule:Day Name
@@ -7702,14 +7582,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 7,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {599fb8ed-b3bc-4f37-b8b4-c4bccce4ede3}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2b7ec7bb-58cb-483c-947d-b8b0a26ea57e}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {fdc4b78f-7e38-4d05-8e2c-7e56d2d1b4c0}, !- Name
+  Schedule:Week:Daily {1531a9a2-27d6-419b-9b8c-00a9b98951e5}, !- Name
   Schedule Day 33,                        !- Sunday Schedule:Day Name
   Schedule Day 33,                        !- Monday Schedule:Day Name
   Schedule Day 33,                        !- Tuesday Schedule:Day Name
@@ -7726,14 +7606,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 8,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {fdc4b78f-7e38-4d05-8e2c-7e56d2d1b4c0}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {1531a9a2-27d6-419b-9b8c-00a9b98951e5}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {204371d5-19da-4129-b5b4-01397def06c3}, !- Name
+  Schedule:Week:Daily {c92db0ef-a431-49c3-8702-3818045d67c3}, !- Name
   Schedule Day 34,                        !- Sunday Schedule:Day Name
   Schedule Day 34,                        !- Monday Schedule:Day Name
   Schedule Day 34,                        !- Tuesday Schedule:Day Name
@@ -7750,14 +7630,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Schedule Ruleset 9,                     !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {204371d5-19da-4129-b5b4-01397def06c3}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {c92db0ef-a431-49c3-8702-3818045d67c3}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {6e7e4e7a-ce24-4bbb-b917-ddacb7f55ad1}, !- Name
+  Schedule:Week:Daily {05af3557-1cb2-420f-9078-7ed909110718}, !- Name
   Service Water Loop Temp - 140F Default, !- Sunday Schedule:Day Name
   Service Water Loop Temp - 140F Default, !- Monday Schedule:Day Name
   Service Water Loop Temp - 140F Default, !- Tuesday Schedule:Day Name
@@ -7774,14 +7654,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Service Water Loop Temp - 140F,         !- Name
   Temperature Schedule Type Limits,       !- Schedule Type Limits Name
-  Schedule:Week:Daily {6e7e4e7a-ce24-4bbb-b917-ddacb7f55ad1}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {05af3557-1cb2-420f-9078-7ed909110718}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {09713adf-9c0a-45c6-a334-4cd25d648dac}, !- Name
+  Schedule:Week:Daily {a82264c6-c6a4-4bed-9f5c-5f7a7c5c2b72}, !- Name
   Water Heater Ambient Temp Schedule - 70F Default, !- Sunday Schedule:Day Name
   Water Heater Ambient Temp Schedule - 70F Default, !- Monday Schedule:Day Name
   Water Heater Ambient Temp Schedule - 70F Default, !- Tuesday Schedule:Day Name
@@ -7798,14 +7678,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Water Heater Ambient Temp Schedule - 70F, !- Name
   Temperature Schedule Type Limits 1,     !- Schedule Type Limits Name
-  Schedule:Week:Daily {09713adf-9c0a-45c6-a334-4cd25d648dac}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {a82264c6-c6a4-4bed-9f5c-5f7a7c5c2b72}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {09680ed9-5d42-43d6-85b5-22708158de33}, !- Name
+  Schedule:Week:Daily {7cc0e36f-498f-4034-85fa-9ae5a36a1586}, !- Name
   Work Efficiency Schedule Default,       !- Sunday Schedule:Day Name
   Work Efficiency Schedule Default,       !- Monday Schedule:Day Name
   Work Efficiency Schedule Default,       !- Tuesday Schedule:Day Name
@@ -7822,7 +7702,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Work Efficiency Schedule,               !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {09680ed9-5d42-43d6-85b5-22708158de33}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {7cc0e36f-498f-4034-85fa-9ae5a36a1586}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -8079,7 +7959,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 72,                                !- Air Inlet Node Name
@@ -8410,7 +8290,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 127,                               !- Air Inlet Node Name
@@ -8741,7 +8621,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 182,                               !- Air Inlet Node Name
@@ -9072,7 +8952,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 28,                                !- Air Inlet Node Name
@@ -9403,7 +9283,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 39,                                !- Air Inlet Node Name
@@ -9734,7 +9614,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 50,                                !- Air Inlet Node Name
@@ -10065,7 +9945,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 61,                                !- Air Inlet Node Name
@@ -10396,7 +10276,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 83,                                !- Air Inlet Node Name
@@ -10727,7 +10607,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 94,                                !- Air Inlet Node Name
@@ -11058,7 +10938,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 105,                               !- Air Inlet Node Name
@@ -11389,7 +11269,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 116,                               !- Air Inlet Node Name
@@ -11720,7 +11600,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 138,                               !- Air Inlet Node Name
@@ -12051,7 +11931,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 149,                               !- Air Inlet Node Name
@@ -12382,7 +12262,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 160,                               !- Air Inlet Node Name
@@ -12713,7 +12593,7 @@ Coil:Cooling:DX:SingleSpeed,
   Always On Discrete,                     !- Availability Schedule Name
   Autosize,                               !- Gross Rated Total Cooling Capacity {W}
   Autosize,                               !- Gross Rated Sensible Heat Ratio
-  3.286927342,                            !- Gross Rated Cooling COP {W/W}
+  3.263479287,                            !- Gross Rated Cooling COP {W/W}
   Autosize,                               !- Rated Air Flow Rate {m3/s}
   773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
   Node 171,                               !- Air Inlet Node Name
@@ -13709,7 +13589,7 @@ Lights,
   Office Bldg Light,                      !- Schedule Name
   Watts/Area,                             !- Design Level Calculation Method
   ,                                       !- Lighting Level {W}
-  14.69389966,                            !- Watts per Zone Floor Area {W/m2}
+  16.05544355,                            !- Watts per Zone Floor Area {W/m2}
   ,                                       !- Watts per Person {W/person}
   ,                                       !- Return Air Fraction
   ,                                       !- Fraction Radiant
@@ -13738,12 +13618,12 @@ People,
   Air Velocity Schedule;                  !- Air Velocity Schedule Name
 
 ElectricEquipment,
-  Office WholeBuilding - Md Office Elec Equip -104.162344 percent reduction, !- Name
+  Office WholeBuilding - Md Office Elec Equip -107.4118113 percent reduction, !- Name
   Office WholeBuilding - Md Office,       !- Zone or ZoneList Name
   Medium Office Bldg Equip,               !- Schedule Name
   Watts/Area,                             !- Design Level Calculation Method
   ,                                       !- Design Level {W}
-  16.481888859611,                        !- Watts per Zone Floor Area {W/m2}
+  16.7442161715053,                       !- Watts per Zone Floor Area {W/m2}
   ,                                       !- Watts per Person {W/person}
   ,                                       !- Fraction Latent
   0.5,                                    !- Fraction Radiant
