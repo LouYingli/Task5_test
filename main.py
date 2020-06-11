@@ -45,13 +45,12 @@ pathway = os.getcwd()
 ###############################################################################
 # list all the inputs which can be modify 
 # define the climate zones that need to be considered
-climate = ['1A','2A','2B','3A','3B','3C','4A','4B','4C','5A','5B','6A','6B','7A','8A']# define the needed climate zones
-
+climate = ['1A','8A']# define the needed climate zones
 # schedule information(15 min intervel) exclude design day schedule
 
 # number of samples for training and testing meta-models
 #number of samples in each climate zone = num_sample * number of sensitive model inputs
-num_sample = 100
+num_sample = 1
 # kernel of meta model (options: 'rbf','linear','poly','sigmoid')
 kernel = 'linear'
 
@@ -74,7 +73,7 @@ np_num_sample = 10000# LHS sample size
 # list the entire sets of some inputs
 climate_lib = ['1A','2A','2B','3A','3B','3C','4A','4B','4C','5A','5B','6A','6B','7A','8A']
 
-'''
+
 os.chdir(pathway)
 ######################################################################################
 #1.sampleing: get different value of model input (LHM)
@@ -99,7 +98,7 @@ for cz in climate:
         for row in param_values:
             data = csv.writer(csvfile, delimiter=',')
             data.writerow(row)  
-'''
+
 ###################################################################################
 #2.modify IDF file and run model, get model output (site EUI)s
 ###model inputs and outputs are saved in './results/energy_data.csv'
