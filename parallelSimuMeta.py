@@ -160,7 +160,7 @@ def runModel(climate,eplus_path,weather_file,eplus_file,param_value,output_file,
 def parallelSimu(climate,round_num):
     #record the start time
     start = time.time()
-    eplus_path ='/usr/EnergyPlus/energyplus-8.7.0'
+    eplus_path ='energyplus'
     weather_file ='./Model/'+climate+'.epw'
     output_file = 'temp'
     # get parameter name and parameter value    
